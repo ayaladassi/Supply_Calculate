@@ -21,10 +21,14 @@ namespace Supply_Calculate
         static int nThread = 3;
         static int partition =n/ nThread;
         static int[] arrString = new int[n];
+        static int[] arrString2 = new int[n];
+
         static int[] arrSidrati = new int[n];
         static int[] arrSidrati2 = new int[n];
         static int[] temp = new int[nThread+1];
         static int[] prefix = new int[nThread];
+        static int[] temp2 = new int[nThread + 1];
+        static int[] prefix2 = new int[nThread];
         private void button1_Click_1(object sender, EventArgs e)
         {
             arrString[0] = Convert.ToInt32(textBox1.Text);
@@ -39,8 +43,19 @@ namespace Supply_Calculate
             arrString[9] = Convert.ToInt32(textBoxE10.Text);
             arrString[10] = Convert.ToInt32(textBoxE11.Text);
             arrString[11] = Convert.ToInt32(textBoxE12.Text);
-            //arrString[12] = Convert.ToInt32(textBoxE13.Text);
-
+           
+            arrString2[0] = Convert.ToInt32(textBox1.Text);
+            arrString2[1] = Convert.ToInt32(textBoxR2.Text);
+            arrString2[2] = Convert.ToInt32(textBoxR3.Text);
+            arrString2[3] = Convert.ToInt32(textBoxR4.Text);
+            arrString2[4] = Convert.ToInt32(textBoxR5.Text);
+            arrString2[5] = Convert.ToInt32(textBoxR6.Text);
+            arrString2[6] = Convert.ToInt32(textBoxR7.Text);
+            arrString2[7] = Convert.ToInt32(textBoxR8.Text);
+            arrString2[8] = Convert.ToInt32(textBoxR9.Text);
+            arrString2[9] = Convert.ToInt32(textBoxR10.Text);
+            arrString2[10] = Convert.ToInt32(textBoxR11.Text);
+            arrString2[11] = Convert.ToInt32(textBoxR12.Text);
 
             arrSidrati[0] = Convert.ToInt32(textBox1.Text);
             arrSidrati[1] = Convert.ToInt32(textBoxE2.Text);
@@ -54,23 +69,25 @@ namespace Supply_Calculate
             arrSidrati[9] = Convert.ToInt32(textBoxE10.Text);
             arrSidrati[10] = Convert.ToInt32(textBoxE11.Text);
             arrSidrati[11] = Convert.ToInt32(textBoxE12.Text);
-            //arrSidrati[12] = Convert.ToInt32(textBoxE13.Text);
+           
             arrSidrati2[0] = Convert.ToInt32(textBox1.Text);
-            arrSidrati2[1] = Convert.ToInt32(textBoxE2.Text);
-            arrSidrati2[2] = Convert.ToInt32(textBoxE3.Text);
-            arrSidrati2[3] = Convert.ToInt32(textBoxE4.Text);
-            arrSidrati2[4] = Convert.ToInt32(textBoxE5.Text);
-            arrSidrati2[5] = Convert.ToInt32(textBoxE6.Text);
-            arrSidrati2[6] = Convert.ToInt32(textBoxE7.Text);
-            arrSidrati2[7] = Convert.ToInt32(textBoxE8.Text);
-            arrSidrati2[8] = Convert.ToInt32(textBoxE9.Text);
-            arrSidrati2[9] = Convert.ToInt32(textBoxE10.Text);
-            arrSidrati2[10] = Convert.ToInt32(textBoxE11.Text);
-            arrSidrati2[11] = Convert.ToInt32(textBoxE12.Text);
+            arrSidrati2[1] = Convert.ToInt32(textBoxR2.Text);
+            arrSidrati2[2] = Convert.ToInt32(textBoxR3.Text);
+            arrSidrati2[3] = Convert.ToInt32(textBoxR4.Text);
+            arrSidrati2[4] = Convert.ToInt32(textBoxR5.Text);
+            arrSidrati2[5] = Convert.ToInt32(textBoxR6.Text);
+            arrSidrati2[6] = Convert.ToInt32(textBoxR7.Text);
+            arrSidrati2[7] = Convert.ToInt32(textBoxR8.Text);
+            arrSidrati2[8] = Convert.ToInt32(textBoxR9.Text);
+            arrSidrati2[9] = Convert.ToInt32(textBoxR10.Text);
+            arrSidrati2[10] = Convert.ToInt32(textBoxR11.Text);
+            arrSidrati2[11] = Convert.ToInt32(textBoxR12.Text);
             temp[0] = 0;
             Serial_algorithm_Revenue();
             prefix_sum_inPlace_Revenue();
             Serial_algorithm_Expenses();
+            prefix_sum_inPlace_Expenses();
+
         }
         //enter
         public void Serial_algorithm_Revenue()
@@ -150,9 +167,58 @@ namespace Supply_Calculate
             int j;
             for (j = 0; j < arrSidrati2.Length; j++)
             {
-                label49.Text = label49.Text + arrSidrati2[j].ToString() + '\n';
+                labelM.Text = labelM.Text + arrSidrati2[j].ToString() + '\n';
             }
-            label49.Text = label10.Text + (Convert.ToInt32(textBoxE13.Text) + arrSidrati2[--j]).ToString() + '\n';
+            labelM.Text = labelM.Text + (arrSidrati2[--j]-Convert.ToInt32(textBoxR13.Text) ).ToString() + '\n';
+
+        }
+        public void prefix_sum_inPlace_Expenses()
+        {
+
+            Parallel.For(0, nThread, i =>
+            {
+                sum2(i * partition, (i * partition) + partition);
+            });
+            insert_prefix2();
+
+            Parallel.For(0, nThread, i =>
+            {
+                end2(i * partition, (i * partition) + partition);
+            });
+            int j;
+            for (j = 0; j < arrString2.Length; j++)
+            {
+                label96.Text = label96.Text + arrString2[j].ToString() + '\n';
+            }
+            label96.Text = label96.Text + (arrString2[--j] - Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
+
+        }
+        public static void sum2(int indexStart, int indexEnd)//חישוב המערך הזמני
+        {
+            int sum = 0;
+            int local = indexEnd / partition - 1;
+            for (int i = indexStart; i < indexEnd; i++)
+            {
+                sum -= arrString2[i];
+                arrString2[i] = sum;
+            }
+            temp2[local + 1] = arrString2[indexEnd - 1];
+        }
+        public static void insert_prefix2()//סכמת המערך הזמני
+        {
+            prefix2[0] = 0;
+            for (int i = 1; i < nThread; i++)
+            {
+                prefix2[i] = temp2[i - 1] - temp2[i];
+            }
+        }
+        public static void end2(int indexStart, int indexEnd)//הצעד האחרון
+        {
+            int local = indexEnd / partition - 1;
+            for (int i = indexStart; i < indexEnd; i++)
+            {
+                arrString2[i] = prefix2[local]- arrString2[i];
+            }
 
         }
 
