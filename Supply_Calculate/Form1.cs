@@ -102,7 +102,7 @@ namespace Supply_Calculate
             {
                 label10.Text = label10.Text + arrSidrati[j].ToString() + '\n';
             }
-            label10.Text = label10.Text + (Convert.ToInt32(textBoxE13.Text) + arrSidrati[--j]).ToString() + '\n';
+            label10.Text = label10.Text + ( arrSidrati[--j]+ Convert.ToInt32(textBoxE13.Text)).ToString() + '\n';
 
         }
         public void prefix_sum_inPlace_Revenue()
@@ -162,14 +162,14 @@ namespace Supply_Calculate
 
             for (int i = 1; i < arrSidrati2.Length; i++)
             {
-                arrSidrati2[i] = arrSidrati2[i - 1] - arrSidrati2[i];
+                arrSidrati2[i] = arrSidrati2[i - 1] + arrSidrati2[i];
             }
             int j;
             for (j = 0; j < arrSidrati2.Length; j++)
             {
                 labelM.Text = labelM.Text + arrSidrati2[j].ToString() + '\n';
             }
-            labelM.Text = labelM.Text + (arrSidrati2[--j]-Convert.ToInt32(textBoxR13.Text) ).ToString() + '\n';
+            labelM.Text = labelM.Text + (arrSidrati2[--j]+Convert.ToInt32(textBoxR13.Text) ).ToString() + '\n';
 
         }
         public void prefix_sum_inPlace_Expenses()
@@ -190,7 +190,8 @@ namespace Supply_Calculate
             {
                 label96.Text = label96.Text + arrString2[j].ToString() + '\n';
             }
-            label96.Text = label96.Text + (arrString2[--j] - Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
+            label96.Text = label96.Text + (arrString2[--j] + Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
+
 
         }
         public static void sum2(int indexStart, int indexEnd)//חישוב המערך הזמני
@@ -199,7 +200,7 @@ namespace Supply_Calculate
             int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
-                sum -= arrString2[i];
+                sum += arrString2[i];
                 arrString2[i] = sum;
             }
             temp2[local + 1] = arrString2[indexEnd - 1];
@@ -209,7 +210,7 @@ namespace Supply_Calculate
             prefix2[0] = 0;
             for (int i = 1; i < nThread; i++)
             {
-                prefix2[i] = temp2[i - 1] - temp2[i];
+                prefix2[i] = temp2[i - 1] + temp2[i];
             }
         }
         public static void end2(int indexStart, int indexEnd)//הצעד האחרון
@@ -217,7 +218,7 @@ namespace Supply_Calculate
             int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
-                arrString2[i] = prefix2[local]- arrString2[i];
+                arrString2[i] = prefix2[local]+ arrString2[i];
             }
 
         }
