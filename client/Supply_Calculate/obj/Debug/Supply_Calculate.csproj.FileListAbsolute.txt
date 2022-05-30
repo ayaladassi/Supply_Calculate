@@ -1,0 +1,91 @@
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+M:\GroupB\תלמידות\אפרת יוסף\פרוייקט חישוב מקבילי ומבוזר\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+D:\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+D:\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+D:\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+D:\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+M:\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+Z:\tichnut\גב' היימן\פרויקטים חישוב מקבילי\מיכל ויהודית\חישוב מקבילי פרויקט + מצגת\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+C:\Users\User\Desktop\פרויקטים חישוב מקבילי\פרויקטים\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+D:\User Files\Documents\!שייך לקיפ\סכום מערך\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+D:\חישוב מקבלי ומבוזר\חישוב מקבילי מבוזר\פרויקט בחישוב מקבילי\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.AssemblyReference.cache
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+C:\Users\1\Documents\Supply_Calculate\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+D:\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+D:\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+D:\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csprojAssemblyReference.cache
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Index.resources
