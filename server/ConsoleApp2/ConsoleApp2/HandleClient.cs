@@ -41,7 +41,7 @@ namespace ServerSide
                     {
                         break;
                     }
-                    string text =File.ReadAllText(@"D:\Supply_Calculate\server\ConsoleApp2\castemers.txt");
+                    string text =File.ReadAllText(@"C:\Users\1\Documents\Supply_Calculate\server\ConsoleApp2\castemers.txt");
                    string a = ","+data + ",";
                     if (text.Contains(a))
                     {

@@ -89,3 +89,14 @@ D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.Co
 D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.exe
 D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
 D:\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Index.resources
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.AssemblyReference.cache
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Index.resources
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.pdb

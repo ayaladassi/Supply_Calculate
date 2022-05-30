@@ -25,13 +25,10 @@ namespace Supply_Calculate
         static int partition = n / nThread;
         static int[] arrString = new int[n];
         static int[] arrString2 = new int[n];
+        static int[] arrayt = new int[n];
 
-        static int[] arrSidrati = new int[n];
-        static int[] arrSidrati2 = new int[n];
         static int[] temp = new int[nThread + 1];
         static int[] prefix = new int[nThread];
-        static int[] temp2 = new int[nThread + 1];
-        static int[] prefix2 = new int[nThread];
         private void button1_Click_1(object sender, EventArgs e)
         {
             arrString[0] = Convert.ToInt32(textBox1.Text);
@@ -60,67 +57,12 @@ namespace Supply_Calculate
             arrString2[10] = Convert.ToInt32(textBoxR11.Text);
             arrString2[11] = Convert.ToInt32(textBoxR12.Text);
 
-            arrSidrati[0] = Convert.ToInt32(textBox1.Text);
-            arrSidrati[1] = Convert.ToInt32(textBoxE2.Text);
-            arrSidrati[2] = Convert.ToInt32(textBoxE3.Text);
-            arrSidrati[3] = Convert.ToInt32(textBoxE4.Text);
-            arrSidrati[4] = Convert.ToInt32(textBoxE5.Text);
-            arrSidrati[5] = Convert.ToInt32(textBoxE6.Text);
-            arrSidrati[6] = Convert.ToInt32(textBoxE7.Text);
-            arrSidrati[7] = Convert.ToInt32(textBoxE8.Text);
-            arrSidrati[8] = Convert.ToInt32(textBoxE9.Text);
-            arrSidrati[9] = Convert.ToInt32(textBoxE10.Text);
-            arrSidrati[10] = Convert.ToInt32(textBoxE11.Text);
-            arrSidrati[11] = Convert.ToInt32(textBoxE12.Text);
-
-            arrSidrati2[0] = Convert.ToInt32(textBox1.Text);
-            arrSidrati2[1] = Convert.ToInt32(textBoxR2.Text);
-            arrSidrati2[2] = Convert.ToInt32(textBoxR3.Text);
-            arrSidrati2[3] = Convert.ToInt32(textBoxR4.Text);
-            arrSidrati2[4] = Convert.ToInt32(textBoxR5.Text);
-            arrSidrati2[5] = Convert.ToInt32(textBoxR6.Text);
-            arrSidrati2[6] = Convert.ToInt32(textBoxR7.Text);
-            arrSidrati2[7] = Convert.ToInt32(textBoxR8.Text);
-            arrSidrati2[8] = Convert.ToInt32(textBoxR9.Text);
-            arrSidrati2[9] = Convert.ToInt32(textBoxR10.Text);
-            arrSidrati2[10] = Convert.ToInt32(textBoxR11.Text);
-            arrSidrati2[11] = Convert.ToInt32(textBoxR12.Text);
             temp[0] = 0;
-            Serial_algorithm_Revenue();
-            prefix_sum_inPlace_Revenue();
-            Serial_algorithm_Expenses();
-            prefix_sum_inPlace_Expenses();
+            //to
+            arrayt = arrto();
 
-        }
-        //enter
-        public void Serial_algorithm_Revenue()
-        {
-
-            for (int i = 1; i < arrSidrati.Length; i++)
-            {
-                arrSidrati[i] = arrSidrati[i - 1] + arrSidrati[i];
-            }
-            int j;
-            for (j = 0; j < arrSidrati.Length; j++)
-            {
-                label10.Text = label10.Text + arrSidrati[j].ToString() + '\n';
-            }
-            label10.Text = label10.Text + (arrSidrati[--j] + Convert.ToInt32(textBoxE13.Text)).ToString() + '\n';
-
-        }
-        public void prefix_sum_inPlace_Revenue()
-        {
-
-            Parallel.For(0, nThread, i =>
-            {
-                sum(i * partition, (i * partition) + partition);
-            });
-            insert_prefix();
-
-            Parallel.For(0, nThread, i =>
-            {
-                end(i * partition, (i * partition) + partition);
-            });
+            //enter
+            prefix_sum_inPlace(arrString);
             int j;
             for (j = 0; j < arrString.Length; j++)
             {
@@ -128,17 +70,50 @@ namespace Supply_Calculate
             }
             label11.Text = label11.Text + (Convert.ToInt32(textBoxE13.Text) + arrString[--j]).ToString() + '\n';
 
+           //remove
+            prefix_sum_inPlace(arrString2);
+         
+            for (j = 0; j < arrString2.Length; j++)
+            {
+                label96.Text = label96.Text + arrString2[j].ToString() + '\n';
+            }
+            label96.Text = label96.Text + (arrString2[--j] + Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
+            //to
+            prefix_sum_inPlace(arrayt);
+            for (j = 0; j < arrayt.Length; j++)
+            {
+                labelM.Text = labelM.Text + arrayt[j].ToString() + '\n';
+            }
+            labelM.Text = labelM.Text + (arrayt[--j] + Convert.ToInt32(textBoxR13.Text)+ Convert.ToInt32(textBoxE13.Text)).ToString() + '\n';
+           
+
         }
-        public static void sum(int indexStart, int indexEnd)//חישוב המערך הזמני
+        //enter
+        public void prefix_sum_inPlace(int[]array)
+        {
+
+            Parallel.For(0, nThread, i =>
+            {
+                sum(array,i * partition, (i * partition) + partition);
+            });
+            insert_prefix();
+
+            Parallel.For(0, nThread, i =>
+            {
+                end(array,i * partition, (i * partition) + partition);
+            });
+           
+        }
+        public static void sum(int []array,int indexStart, int indexEnd)//חישוב המערך הזמני
         {
             int sum = 0;
             int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
-                sum += arrString[i];
-                arrString[i] = sum;
+                sum += array[i];
+                array[i] = sum;
             }
-            temp[local + 1] = arrString[indexEnd - 1];
+            temp[local + 1] = array[indexEnd - 1];
         }
         public static void insert_prefix()//סכמת המערך הזמני
         {
@@ -148,82 +123,24 @@ namespace Supply_Calculate
                 prefix[i] = temp[i - 1] + temp[i];
             }
         }
-        public static void end(int indexStart, int indexEnd)//הצעד האחרון
+        public static void end(int[]array ,int indexStart, int indexEnd)//הצעד האחרון
         {
             int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
-                arrString[i] += prefix[local];
+                array[i] += prefix[local];
             }
 
-        }
-
-        //remove
-
-        public void Serial_algorithm_Expenses()
+        } 
+        //to
+        public static int[] arrto()
         {
-
-            for (int i = 1; i < arrSidrati2.Length; i++)
+            arrayt[0] = arrString[0];
+            for (int i = 1; i < arrString.Length; i++)
             {
-                arrSidrati2[i] = arrSidrati2[i - 1] + arrSidrati2[i];
+                arrayt[i] = arrString[i] + arrString2[i];
             }
-            int j;
-            for (j = 0; j < arrSidrati2.Length; j++)
-            {
-                labelM.Text = labelM.Text + arrSidrati2[j].ToString() + '\n';
-            }
-            labelM.Text = labelM.Text + (arrSidrati2[--j] + Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
-
-        }
-        public void prefix_sum_inPlace_Expenses()
-        {
-
-            Parallel.For(0, nThread, i =>
-            {
-                sum2(i * partition, (i * partition) + partition);
-            });
-            insert_prefix2();
-
-            Parallel.For(0, nThread, i =>
-            {
-                end2(i * partition, (i * partition) + partition);
-            });
-            int j;
-            for (j = 0; j < arrString2.Length; j++)
-            {
-                label96.Text = label96.Text + arrString2[j].ToString() + '\n';
-            }
-            label96.Text = label96.Text + (arrString2[--j] + Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
-
-
-        }
-        public static void sum2(int indexStart, int indexEnd)//חישוב המערך הזמני
-        {
-            int sum = 0;
-            int local = indexEnd / partition - 1;
-            for (int i = indexStart; i < indexEnd; i++)
-            {
-                sum += arrString2[i];
-                arrString2[i] = sum;
-            }
-            temp2[local + 1] = arrString2[indexEnd - 1];
-        }
-        public static void insert_prefix2()//סכמת המערך הזמני
-        {
-            prefix2[0] = 0;
-            for (int i = 1; i < nThread; i++)
-            {
-                prefix2[i] = temp2[i - 1] + temp2[i];
-            }
-        }
-        public static void end2(int indexStart, int indexEnd)//הצעד האחרון
-        {
-            int local = indexEnd / partition - 1;
-            for (int i = indexStart; i < indexEnd; i++)
-            {
-                arrString2[i] = prefix2[local] + arrString2[i];
-            }
-
+            return arrayt;
         }
 
 
