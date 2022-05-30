@@ -11,80 +11,24 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 
-using System.Collections;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Xml.Serialization;
-
 namespace Supply_Calculate
 {
     public partial class Form1 : Form
     {
-        IPHostEntry host;
-        IPAddress ipAddress;
-        IPEndPoint remoteEP;
-        Socket socket;
-        //משתנה אסקי ששולח את הנתונים בסוקט
-        byte[] bytes = new byte[1024];
-        public void StartClient()
-        {
-            try
-            {
-                // Connect to a Remote server  
-                // Get Host IP Address that is used to establish a connection  
-                // In this case, we get one IP address of localhost that is IP : 127.0.0.1  
-                // If a host has multiple addresses, you will get a list of addresses  
-                host = Dns.GetHostEntry("localhost");
-                ipAddress = host.AddressList[0];
-                remoteEP = new IPEndPoint(ipAddress, 3000);
-
-                // Create a TCP/IP  socket.    
-                socket = new Socket(ipAddress.AddressFamily,
-                    SocketType.Stream, ProtocolType.Tcp);
-
-                // Connect the socket to the remote endpoint. Catch any errors.    
-                try
-                {
-                    // Connect to Remote EndPoint  
-                    socket.Connect(remoteEP);
-                    Console.WriteLine("Socket connected to {0}",
-                        socket.RemoteEndPoint.ToString());
-                }
-                catch (ArgumentNullException ane)
-                {
-                    Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
-                }
-                catch (SocketException se)
-                {
-                    Console.WriteLine("SocketException : {0}", se.ToString());
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Unexpected exception : {0}", e.ToString());
-                }
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-        }
-
         public Form1()
         {
             InitializeComponent();
-            //StartClient();
-
         }
 
         static int n = 12;
         static int nThread = 3;
-        static int partition =n/ nThread;
+        static int partition = n / nThread;
         static int[] arrString = new int[n];
         static int[] arrString2 = new int[n];
 
         static int[] arrSidrati = new int[n];
         static int[] arrSidrati2 = new int[n];
-        static int[] temp = new int[nThread+1];
+        static int[] temp = new int[nThread + 1];
         static int[] prefix = new int[nThread];
         static int[] temp2 = new int[nThread + 1];
         static int[] prefix2 = new int[nThread];
@@ -102,7 +46,7 @@ namespace Supply_Calculate
             arrString[9] = Convert.ToInt32(textBoxE10.Text);
             arrString[10] = Convert.ToInt32(textBoxE11.Text);
             arrString[11] = Convert.ToInt32(textBoxE12.Text);
-           
+
             arrString2[0] = Convert.ToInt32(textBox1.Text);
             arrString2[1] = Convert.ToInt32(textBoxR2.Text);
             arrString2[2] = Convert.ToInt32(textBoxR3.Text);
@@ -128,7 +72,7 @@ namespace Supply_Calculate
             arrSidrati[9] = Convert.ToInt32(textBoxE10.Text);
             arrSidrati[10] = Convert.ToInt32(textBoxE11.Text);
             arrSidrati[11] = Convert.ToInt32(textBoxE12.Text);
-           
+
             arrSidrati2[0] = Convert.ToInt32(textBox1.Text);
             arrSidrati2[1] = Convert.ToInt32(textBoxR2.Text);
             arrSidrati2[2] = Convert.ToInt32(textBoxR3.Text);
@@ -142,33 +86,6 @@ namespace Supply_Calculate
             arrSidrati2[10] = Convert.ToInt32(textBoxR11.Text);
             arrSidrati2[11] = Convert.ToInt32(textBoxR12.Text);
             temp[0] = 0;
-
-
-            //// Send the data through the socket.  
-            //byte[] result = new byte[arrSidrati.Length * sizeof(int)];
-            //Buffer.BlockCopy(arrSidrati, 0, result, 0, result.Length);
-            //XmlSerializer serializer = new XmlSerializer(typeof(int[]));
-            //var myString = serializer.Serialize(arrSidrati);
-            //int bytesSent = socket.Send(result);
-            //// Receive the response from the remote device.    
-
-            //int bytesRec = socket.Receive(bytes);
-            //string s = Encoding.UTF8.GetString(bytes, 0, bytesRec);
-
-            //// Displays the MessageBox.
-            //MessageBox.Show(s);
-           
-            //byte[] msg = Encoding.UTF8.GetBytes(Btn_America.Text);
-            //// Send the data through the socket.    
-            //int bytesSent = socket.Send(msg);
-
-            //// Receive the response from the remote device.    
-            //int bytesRec = socket.Receive(bytes);
-            //string s = Encoding.UTF8.GetString(bytes, 0, bytesRec);
-            //MessageBox.Show(s);
-
-
-
             Serial_algorithm_Revenue();
             prefix_sum_inPlace_Revenue();
             Serial_algorithm_Expenses();
@@ -178,7 +95,7 @@ namespace Supply_Calculate
         //enter
         public void Serial_algorithm_Revenue()
         {
-            
+
             for (int i = 1; i < arrSidrati.Length; i++)
             {
                 arrSidrati[i] = arrSidrati[i - 1] + arrSidrati[i];
@@ -188,7 +105,7 @@ namespace Supply_Calculate
             {
                 label10.Text = label10.Text + arrSidrati[j].ToString() + '\n';
             }
-            label10.Text = label10.Text + ( arrSidrati[--j]+ Convert.ToInt32(textBoxE13.Text)).ToString() + '\n';
+            label10.Text = label10.Text + (arrSidrati[--j] + Convert.ToInt32(textBoxE13.Text)).ToString() + '\n';
 
         }
         public void prefix_sum_inPlace_Revenue()
@@ -209,13 +126,13 @@ namespace Supply_Calculate
             {
                 label11.Text = label11.Text + arrString[j].ToString() + '\n';
             }
-            label11.Text = label11.Text +( Convert.ToInt32(textBoxE13.Text)+ arrString[--j]).ToString() + '\n';
+            label11.Text = label11.Text + (Convert.ToInt32(textBoxE13.Text) + arrString[--j]).ToString() + '\n';
 
         }
         public static void sum(int indexStart, int indexEnd)//חישוב המערך הזמני
         {
             int sum = 0;
-            int local = indexEnd / partition-1;
+            int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
                 sum += arrString[i];
@@ -255,7 +172,7 @@ namespace Supply_Calculate
             {
                 labelM.Text = labelM.Text + arrSidrati2[j].ToString() + '\n';
             }
-            labelM.Text = labelM.Text + (arrSidrati2[--j]+Convert.ToInt32(textBoxR13.Text) ).ToString() + '\n';
+            labelM.Text = labelM.Text + (arrSidrati2[--j] + Convert.ToInt32(textBoxR13.Text)).ToString() + '\n';
 
         }
         public void prefix_sum_inPlace_Expenses()
@@ -304,7 +221,7 @@ namespace Supply_Calculate
             int local = indexEnd / partition - 1;
             for (int i = indexStart; i < indexEnd; i++)
             {
-                arrString2[i] = prefix2[local]+ arrString2[i];
+                arrString2[i] = prefix2[local] + arrString2[i];
             }
 
         }
