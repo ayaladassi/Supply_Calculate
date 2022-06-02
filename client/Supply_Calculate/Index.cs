@@ -90,7 +90,7 @@ namespace Supply_Calculate
             string s = Encoding.UTF8.GetString(bytes, 0, bytesRec);
 
             // Displays the MessageBox.
-            MessageBox.Show(s);
+            //MessageBox.Show(s);
             if (s=="true")
             {
                 Form1 f1 = new Form1();

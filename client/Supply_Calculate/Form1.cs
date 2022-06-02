@@ -88,7 +88,7 @@ namespace Supply_Calculate
            
 
         }
-        //enter
+    
         public void prefix_sum_inPlace(int[]array)
         {
 
