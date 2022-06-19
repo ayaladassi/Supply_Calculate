@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0LjrHVu2xqd+eRkAsoqL8p5AvDpWp392eMxAH55ZlDknhsMdd7V8b7oXII3R6NZHLzlb3wNy3rgWVofWAeha6Q==",
+  "dgSpecHash": "wikkLi9nJe12benIW9/EDzJ84mfjfwuNJgUjuSHEeYXRvQyoeVlonT6uuj7A9xzsQm4mXnUA8qC8gniiOniiIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1\\Documents\\Supply_Calculate\\server\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+  "projectFilePath": "C:\\Users\\labadmin\\Documents\\GitHub\\Supply_Calculate\\server\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\1\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+    "C:\\Users\\labadmin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }

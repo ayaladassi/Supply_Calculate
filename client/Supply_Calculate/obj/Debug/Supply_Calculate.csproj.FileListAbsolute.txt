@@ -100,3 +100,14 @@ C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_C
 C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
 C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.exe
 C:\Users\1\Documents\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe.config
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.exe
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\bin\Debug\Supply_Calculate.pdb
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.AssemblyReference.cache
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Form1.resources
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Index.resources
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.Properties.Resources.resources
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.GenerateResource.cache
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.csproj.CoreCompileInputs.cache
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.exe
+C:\Users\labadmin\Documents\GitHub\Supply_Calculate\client\Supply_Calculate\obj\Debug\Supply_Calculate.pdb
