@@ -23,7 +23,7 @@ namespace ServerSide
 
         private void go()
         {
-            // Incoming data from the client.    
+            // נתונים נכנסים מהלקוח    
             string data = null;
             byte[] bytes = null;
             byte[] by = null;

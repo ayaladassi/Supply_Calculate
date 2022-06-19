@@ -27,10 +27,12 @@ namespace Supply_Calculate
         {
             try
             {
-                // Connect to a Remote server  
-                // Get Host IP Address that is used to establish a connection  
-                // In this case, we get one IP address of localhost that is IP : 127.0.0.1  
-                // If a host has multiple addresses, you will get a list of addresses  
+
+
+// התחבר לשרת מרוחק
+// קבל כתובת IP מארח המשמשת ליצירת חיבור
+// במקרה זה, אנו מקבלים כתובת IP אחת של localhost שהיא IP : 127.0.0.1
+// אם למארח יש מספר כתובות, תקבל רשימה של כתובות
                 host = Dns.GetHostEntry("localhost");
                 ipAddress = host.AddressList[0];
                 remoteEP = new IPEndPoint(ipAddress, 3000);

@@ -18,20 +18,20 @@ namespace ServerSide
         }
         public static void StartServer()
         {
-            // Get Host IP Address that is used to establish a connection  
-            // In this case, we get one IP address of localhost that is IP : 127.0.0.1  
-            // If a host has multiple addresses, you will get a list of addresses 
+            //   המשמש ליצירת חיבור IP  קבל כתובת    
+            // 127.0.0.1 שהוא localhost-  IP במקרה זה לקחנו  
+            // אם יש כמה כתובות נקבל רשימה של כתובות
             int counter = 0;
             IPHostEntry host = Dns.GetHostEntry("localhost");
             IPAddress ipAddress = host.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 3000);
-            // Create a Socket that will use Tcp protocol
+            // tcp צור סוקט שישתמש בפרוטקול 
 
             Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            // A Socket must be associated with an endpoint using the Bind method  
+            // שיוך הסוקט לפורט ולהוסט   
             listener.Bind(localEndPoint);
-            // Specify how many requests a Socket can listen before it gives Server busy response.  
-            // We will listen 10 requests at a time  
+            // כמה בקשות אפשר לקבל 
+            // 10 משתמשים
             listener.Listen(10);
             while (true)
             {
