@@ -80,6 +80,11 @@ namespace Supply_Calculate
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int[] arr = { 1, 2, 3 };
+            string sx = string.Join(",", arr);
+            byte[] msg1 = Encoding.UTF8.GetBytes(sx);
+
+
             byte[] msg = Encoding.UTF8.GetBytes(textBox1.Text);
 
             // Send the data through the socket.    
@@ -95,6 +100,7 @@ namespace Supply_Calculate
             {
                 Form1 f1 = new Form1();
                 f1.Show();
+               
             }
             else
             {

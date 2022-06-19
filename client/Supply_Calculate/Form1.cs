@@ -43,6 +43,7 @@ namespace Supply_Calculate
             arrString[9] = Convert.ToInt32(textBoxE10.Text);
             arrString[10] = Convert.ToInt32(textBoxE11.Text);
             arrString[11] = Convert.ToInt32(textBoxE12.Text);
+            string s = string.Join(",", arrString);
 
             arrString2[0] = Convert.ToInt32(textBox1.Text);
             arrString2[1] = Convert.ToInt32(textBoxR2.Text);
@@ -95,6 +96,7 @@ namespace Supply_Calculate
             Parallel.For(0, nThread, i =>
             {
                 sum(array,i * partition, (i * partition) + partition);
+               
             });
             insert_prefix();
 
